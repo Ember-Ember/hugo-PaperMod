@@ -8,7 +8,7 @@
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
 {{- end }}
@@ -91,12 +91,12 @@
 
         const copybutton = document.createElement('button');
         copybutton.classList.add('copy-code');
-        copybutton.innerText = '{{- i18n "code_copy" | default "copy" }}';
+        copybutton.innerHTML = '{{- i18n "code_copy" | default "copy" }}';
 
         function copyingDone() {
-            copybutton.innerText = '{{- i18n "code_copied" | default "copied!" }}';
+            copybutton.innerHTML = '{{- i18n "code_copied" | default "copied!" }}';
             setTimeout(() => {
-                copybutton.innerText = '{{- i18n "code_copy" | default "copy" }}';
+                copybutton.innerHTML = '{{- i18n "code_copy" | default "copy" }}';
             }, 2000);
         }
 
