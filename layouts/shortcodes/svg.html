@@ -1,7 +1,0 @@
-<!-- image -->
-<figure {{ with .Get "class" }}class="{{.}}"{{ end }}>
-    {{ with .Get "link" }}<a href="{{ . }}">{{ end }}
-        <img display: inline-block src="{{ .Get "src" }}" height={{ .Get "height" }} />
-    {{ if .Get "link" }}</a>{{ end }}
-</figure>
-<!-- image -->
